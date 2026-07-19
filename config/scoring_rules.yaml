@@ -1,0 +1,42 @@
+tracks:
+  ukvi:
+    weights:
+      correctness: 0.25
+      content: 0.25
+      clarity: 0.2
+      confidence: 0.15
+      composure: 0.15
+  pre_cas:
+    weights:
+      correctness: 0.3
+      content: 0.3
+      clarity: 0.2
+      confidence: 0.1
+      composure: 0.1
+  credibility:
+    weights:
+      correctness: 0.25
+      content: 0.25
+      clarity: 0.2
+      confidence: 0.15
+      composure: 0.15
+
+risk_scores:
+  funding_unclear: 3
+  academic_progression_weak: 3
+  immigration_intent_unclear: 3
+  genuine_student_doubt: 2
+  planning_insufficient: 1
+  visa_rules_misunderstood: 2
+  previous_refusal_concern: 3
+
+readiness_thresholds:
+  ukvi:
+    min_avg_5c: 0.65
+    max_total_risk: 6
+  pre_cas:
+    min_avg_5c: 0.70
+    max_total_risk: 5
+  credibility:
+    min_avg_5c: 0.65
+    max_total_risk: 6
